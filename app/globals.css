@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+}
+
+a {
+  @apply transition-colors;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-panel;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium;
+}
+
+.badge-success {
+  @apply badge bg-emerald-100 text-emerald-700;
+}
+
+.badge-warning {
+  @apply badge bg-amber-100 text-amber-700;
+}
+
+.badge-danger {
+  @apply badge bg-rose-100 text-rose-700;
+}
+
+.badge-neutral {
+  @apply badge bg-slate-100 text-slate-700;
+}
