@@ -41,12 +41,13 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             organizationName: demoUser.organizationName,
           };
         }
+        const appRole = toAppRole(dbUser.role);
 
         return {
           id: dbUser.id,
           name: dbUser.name,
           email: dbUser.email,
-          role: isUserRole(toAppRole(dbUser.role)) ? toAppRole(dbUser.role) : demoUser.role,
+          role: isUserRole(appRole) ? appRole : demoUser.role,
           organizationName: dbUser.organization.name,
         };
       },
