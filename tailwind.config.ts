@@ -12,7 +12,6 @@ const config: Config = {
         ink: "#0f172a",
         ocean: "#0b3b66",
         mint: "#10b981",
-        amber: "#f59e0b",
         danger: "#ef4444",
       },
       boxShadow: {
