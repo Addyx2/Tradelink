@@ -47,7 +47,7 @@ export default async function HomePage({ searchParams }: { searchParams?: { role
               <RoleLink href="/shipments" role={user.role} className="text-sm font-medium text-ocean hover:text-sky-900">View all</RoleLink>
             </div>
             {visibleShipments.map((shipment) => (
-              <ShipmentCard key={shipment.id} shipment={shipment} />
+              <ShipmentCard key={shipment.id} shipment={shipment} role={user.role} />
             ))}
           </div>
 
